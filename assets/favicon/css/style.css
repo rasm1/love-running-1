@@ -177,6 +177,27 @@ footer {
         width: 300px;
         right: 50px;
     }
+    
+}
+
+#reasons{
+    width:90%;
+    margin: 20px auto;
+}
+#reasons h2{
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#benefits{
+    line-height:150%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+hr{
+    margin-top:5px;
+    margin-bottom:5px;
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
