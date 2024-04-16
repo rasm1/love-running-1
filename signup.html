@@ -36,14 +36,49 @@
                 <li><a href="gallery.html">Gallery</li></a>
 
 
-                <li><a href="signup.html"  class="active">Sign Up</li></a>
+                <li><a href="signup.html" class="active">Sign Up</li></a>
 
             </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main>Main Content</main>
+    <main>
+        <!-- form content -->
+        <section id="signup">
+            <form method="post" id="signup-form" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-heart-pulse"></i>Let's get you signed up!</h2>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="first-name" class="text-input" required> <br>
+
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="last-name" class="text-input" required><br>
+
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email-adress" class="text-input" required><br>
+
+                <div class="running-prefrence">
+                    <div>
+                        <label for="road">road</label>
+                        <input type="radio" name="road" class="radio-buttons" required checked>
+                    </div>
+
+                    <div>
+                        <label for="trail">trail</label>
+                        <input type="radio" name="trail" class="radio-buttons" required>
+                    </div>
+
+                    <div>
+                        <label for="both ">both</label>
+                        <input type="radio" name="both" class="radio-buttons" required>
+                    </div>
+                </div>
+
+                <input type="submit" name="submit" class="join-button">
+
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
