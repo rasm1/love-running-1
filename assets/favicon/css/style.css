@@ -99,6 +99,47 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+}
+/* form styling */
+#signup {
+    background-image: url(../images/signup-image.webp);
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding: 20px 10%;
+}
+
+#signup-form{
+    color:#ffffff;
+    background-color: rgba(60,60,60,0.6);
+    padding:30px;
+}
+
+#signup h2 {
+    color: #fafafa;
+    padding-bottom: 20px;
+}
+
+.text-input{
+color: #fafafa;
+border: 1px solid #fafafa;
+border-radius: 2px;
+}
+
+.radio-buttons{
+    display:flex;
+    justify-content: space-between;
+}
+
+.join-button{
+    margin: 20px;
+    padding: 15px 32px;
+    border-radius: 2px;
+    background-color: #454b1b;
+    color:#fafafa;
+    font-size:100%;
 }
 
 /* hero section*/
