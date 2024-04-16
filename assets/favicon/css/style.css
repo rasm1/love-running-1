@@ -20,15 +20,17 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
 
-.hidden-heading{
-    display:none;
+.hidden-heading {
+    display: none;
 }
 
 /* Header */
@@ -124,6 +126,17 @@ main {
     color: #ffffff;
 }
 
+/* Gallery page */
+
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0%;
+}
+
 /* Footer */
 footer {
     #social-networks {
@@ -139,6 +152,14 @@ footer {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* media query: large or landscape phones (576px and up*/
+@media screen and (min-width:576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /*Media query: tablets and larger (768px and up) */
@@ -201,31 +222,37 @@ footer {
         text-align: end;
         align-self: flex-end;
     }
-}
-/* Meetup times section*/
-#times{
-    background: url(../images/dublin-city.webp) no-repeat center/cover;
-    display:flex;
-    flex-wrap:wrap;
+
+    #photos {
+        column-count: 3;
+    }
 }
 
-#times div{
+/* Meetup times section*/
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
     color: #fafafa;
-    background-color:rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
     text-align: center;
     /* This will not wrap on screen of less than 400px wide
     Each div will expand to fill available space on it's row*/
-    flex-basis:200px;
-    flex-grow:1;
+    flex-basis: 200px;
+    flex-grow: 1;
     /* creates a grid of meetup time divs over the background image */
     border: 2px solid white;
 }
 
-#times h3{
+#times h3 {
     /* override heading colour set in general styles */
     color: #fafafa;
 }
+
 #reasons {
     width: 90%;
     margin: 20px auto;
@@ -274,6 +301,11 @@ hr {
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
